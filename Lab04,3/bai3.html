@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    
+    .menu {
+      display: flex;
+      background-color: lightgray;
+      border-bottom: 2px solid red;
+    }
+
+    .menu li {
+      list-style: none;
+      position: relative;
+    }
+
+    .menu > li {
+      border-right: 1px solid red;
+    }
+
+    .menu a {
+      display: block;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .menu > li:hover > a {
+      background-color: green;
+      color: white;
+    }
+
+   
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: lightgray;
+      border: 1px solid gray;
+      min-width: 220px;
+      z-index: 1000;
+    }
+
+  
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    /* Mục con */
+    .submenu li {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .submenu a {
+      padding: 10px 20px;
+      color: black;
+    }
+
+    /* Hover submenu */
+    .submenu li:hover a {
+      background-color: green;
+      color: white;
+    }
+
+    /* Định dạng tổng thể */
+    .menu-wrapper {
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="menu-wrapper">
+    <ul class="menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Khóa học</a>
+        <ul class="submenu">
+          <li><a href="#">Lập trình web PHP & MySQL</a></li>
+          <li><a href="#">Lập trình web NetCore</a></li>
+          <li><a href="#">Lập trình web Java SpringBoot</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Dịch vụ</a></li>
+      <li><a href="#">Hỗ trợ</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

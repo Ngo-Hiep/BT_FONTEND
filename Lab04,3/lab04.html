@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+    }
+
+    ul {
+      color: blue;
+    }
+
+    ol {
+      color: red;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+      font-weight: bold;
+    }
+
+    h5[style], p[style] {
+      color: hotpink;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto 30px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+ 
+    }
+
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+
+Bài 1:
+  <ul>
+    <li>China</li>
+    <li>India</li>
+  </ul>
+
+  <ol>
+    <li>United States</li>
+    <li>United Kingdom</li>
+  </ol>
+
+  <hr>
+
+Bài 2:
+
+  <h5 class="red">This is an H5 element that uses the RED class</h5>
+
+  <h5 style="color:hotpink">This is an H5 element that has been allowed to use hotpink style.</h5>
+
+  <p class="blue">This paragraph uses the class BLUE</p>
+
+  <p>This paragraph does not use the class BLUE</p>
+
+  <p style="color:hotpink">This paragraph is hotpink</p>
+
+  <hr>
+
+  BÀI 3:  <br>FORM ĐĂNG NHẬP
+
+  <div class="container">
+    <h2>Đăng nhập</h2>
+    <form>
+      <label for="login-username">Tên đăng nhập:</label>
+      <input type="text" id="login-username" name="username" required>
+
+      <label for="login-password">Mật khẩu:</label>
+      <input type="password" id="login-password" name="password" required>
+
+      <input type="submit" value="Đăng nhập">
+    </form>
+  </div>
+
+  ĐĂNG KÝ
+  <div class="container">
+    <h2>Đăng ký</h2>
+    <form>
+      <label for="fullname">Họ tên:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="reg-username">Tên đăng nhập:</label>
+      <input type="text" id="reg-username" name="username" required>
+
+      <label for="reg-password">Mật khẩu:</label>
+      <input type="password" id="reg-password" name="password" required>
+
+      <input type="submit" value="Đăng ký">
+    </form>
+  </div>
+
+</body>
+</html>
